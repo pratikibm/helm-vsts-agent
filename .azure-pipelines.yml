@@ -3,6 +3,9 @@ variables:
   HELM_VERSION: v2.8.2
   HELM_PATH: $(System.DefaultWorkingDirectory)/helm
 
+pool:
+  name: GK2-SRE-POC
+  
 steps:
 - task: HelmInstaller@0
   inputs:
